@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles/createaccount.css">
+        <script src="scripts/login.js"></script>
+    </head>
+    <body>
+     <div class="body"></div>
+		<div class="header">
+			<div>Create Account</div>
+		</div>
+        <form name="login" class="login">
+			<input type="text" class="username" id="username" placeholder="username"><br>
+			<input type="text" class="email" id="email" placeholder="email"><br>
+			<input type="password" class="pw" id="password" placeholder="password"><br>
+			<input type="password" class="pw2" placeholder="rewrite password"><br>
+			<input type="submit" class="create" onclick="checkAccountValues()"  value="Create"/>
+			<input type="button" class="back" onclick="goToLoginPage()" value="Back"/>
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+  
+</html>

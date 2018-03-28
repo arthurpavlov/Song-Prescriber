@@ -1,0 +1,180 @@
+#current-song-art{
+	width: 60vw;
+	height: 50vh;
+}
+
+body {
+	font-family: 'Roboto';
+}
+
+input {
+	margin-left: 10px;
+	margin-bottom: 20px;
+}
+
+button {
+	margin-left: 5%;
+}
+
+main {
+	position: relative;
+	margin-top: 100px;
+}
+
+main * {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+label {
+	display: inline-block;
+	width: 100px;
+}
+
+ul {
+	list-style-type: none;
+}
+
+table {
+	margin: 20px;
+}
+
+.hidden {
+	display: none;
+}
+
+.delete-icon {
+	height: 16px;
+	width: 16px;
+}
+
+.profile-head {
+	background-color: #FF6600;
+	height: 200px;
+	width: 105%;
+	padding: 0px;
+	margin-top: 180px;
+	margin-left: -10px;
+}	
+
+.profile-head * {
+	position: relative;
+	bottom: -100px;
+}
+
+.profile-photo {
+	width: 64px;
+	height: 64px;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+	padding: 0px;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+.update-profile-button {
+	position: relative;
+	float: right;
+	margin-top: -175px;
+	margin-right: 20px;
+}
+
+.display-name {
+	display: inline;
+}
+
+
+.bio {
+	margin-bottom: 20px;
+}
+
+.bio-update-text {
+	position: relative;
+	min-height: 100px;
+	width: 80%;
+	margin-left: 5%;
+	resize: none;
+}
+
+#four-song-list {
+	margin-left: 20px;
+}
+
+#interest-text {
+	margin-left: 5%;
+}
+
+#preference-text {
+	margin-left: 5%
+}
+
+#song-history {
+	margin-top: 20px;
+	margin-bottom: 200px;
+}
+
+.done-edit {
+	float: right;
+	margin-top: 50px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.main-wrapper {
+	z-index: -1;
+}
+
+@media screen and (min-width: 768px) {
+	#current-song-art{
+	width: 35vw;
+	height: 50vh;
+}
+
+	.update-profile-button {
+		position: relative;
+		float: right;
+		margin-top: 70px;
+		margin-right: 10px;
+	}
+
+	body {
+		background-color: #2D2D2D;
+	}
+
+	.main-wrapper {
+		position: absolute;
+		width: 50%;
+		min-height: 115%;	
+		background-color: white;
+		margin-top: -100px;
+		margin-left: 25%;
+	}
+
+	.profile-head {
+		height: 200px;
+		width: 100%;
+		margin: auto;
+		margin-right: 0px;
+		margin-left: 0px;
+		margin-top: 180px;
+	}
+
+	.bio-update-text {
+		width: 85%;
+	}
+}
+
+
+@media screen and (min-width: 1280px) {
+	.bio-update-text {
+		height: 100px;
+	}
+}
+main{
+	background-color:#2c3840;
+	color:white;
+}
+.main-wrapper{
+	background-color:#2c3840;
+}

@@ -1,0 +1,103 @@
+doctype html
+
+html(lang="en")
+    head
+        title=Songpage
+        link(href='/styles/SongPage.css' rel='stylesheet')
+        link(href='/styles/navbar.css' rel='stylesheet')
+    body
+        nav.navbar
+            a(
+                class='nav-title'
+                href="#" 
+            ) Song Prescriber
+            div.search
+                input(
+                    type='text' 
+                    id='searchText'
+                    placeholder='Title - Artist'
+                )
+                button.searchButton(
+                    value="submitsearch"
+                ) Search
+            div.nav-wrapper
+                ul
+                    li 
+                        a(onclick="goDashboard()") Home
+                    li 
+                        a(onclick="goProfile()") Profile
+                    li 
+                        a(onclick="goLogin()") Sign Out
+        section#sectionPlaySong
+            section#songImg
+                img(
+                    class='songImg'
+                    id='cover-art' 
+                    src=coverArt
+                    height=200 
+                    width=200
+                )
+            audio(
+                id="player"
+                controls
+                src=songDemo
+                type="audio/mp3"
+            )
+        section#sectionInfo
+            header
+                h1#song-info-name 
+                    strong #{songName}
+                p#artist-info 
+                    strong Artist: #{artistName}
+                p#album-info
+                    strong Album: #{albumName}
+                p#ext-link
+                    a(href=externalLink) Find on Spotify
+            
+        
+        section#sectionSearch
+            header
+                h1#headerSearch Similar Songs:
+                ul.ulSearch
+                    li
+                        a.searchAlbum(href="/search.html") Search for songs in this album
+                    li
+                        a.searchArtist(href="/search.html") Search for songs by this artist
+                    li
+                        a.searchGenre(href="/search.html") Search for songs with this genre
+                
+            
+        
+        section#sectionLike
+            p Likes: #{likes}
+            button(
+                type="submit" 
+                class="buttonLike"
+            ) Like
+        
+        section#sectionReport
+            p Submit A Report:
+            button(
+                type="submit"
+                class="buttonReport"
+            ) Report
+        
+        section#sectionComments
+            p Comments: 
+                table#comments
+                    tbody
+                        each comment in comments
+                            tr
+                                td=comment.username
+                                td=comment.content
+            textarea(
+                class="commentBox"
+                rows="4"
+                cols="50"
+            )
+            button(
+                type="submit"
+                class="buttonPost"
+            ) Post comment
+    script(src="https://code.jquery.com/jquery-3.1.1.min.js")
+    script(src="/scripts/songpage.js")

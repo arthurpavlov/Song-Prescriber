@@ -1,0 +1,254 @@
+	.Follow ul{
+		
+	}
+	
+	.nav-title{
+		position: absolute;
+		color: black;
+		margin-top: -8px;
+		font-weight: bold;
+		font-size: 20px;
+		float:left;
+	}
+
+	.search{
+		position: absolute;
+		padding: 13px 40px;
+		margin-left: 15vw;
+		width: 20%;
+	}
+
+	.search input{
+		width: 60%;
+		height: 3vh;
+		font-size: 20px;
+	}
+
+	.search button{
+		padding: 10px 20px;
+		height: 39px;
+		width: 120px;
+		margin-left: 20px;
+	}
+
+	.navbar{
+		position: absolute;
+		top: 0;
+		width: 200%;
+		left: -10px;
+		right: -10px;
+		height: 60px;
+		background-image: url("background.jpg");
+	}
+
+	.navbar a{
+		text-decoration: none;
+		padding: 27px 40px;
+		color: white;
+
+	}
+
+	.nav-wrapper li a:hover{
+		background: orange;
+	}
+
+	.nav-wrapper ul li{
+		list-style: none;
+		display: inline;
+		font-weight: bold;
+
+	
+	}
+
+	.nav-wrapper{
+		width: 50%;
+		text-align: center;
+		margin-left: 30vw;
+	}
+
+
+@media screen and (max-width: 1000px) {
+	.Prescribe{
+		margin-top:170px;
+	}
+	.nav-title{
+		margin-top: -8px;
+		margin-left: 38vw;
+	}
+
+	.search{
+		top: 45px;
+		width: 40%;
+	}
+
+	.search input{
+		width: 60%;
+		height: 3vh;
+		font-size: 20px;
+	}
+
+	.search button{
+		padding: 10px 20px;
+		height: 39px;
+		width: 120px;
+		margin-left: 20px;
+	}
+
+	.navbar{
+		position: absolute;
+		top: 0;
+		width: 200%;
+		left: -10px;
+		right: -10px;
+		height: 180px;
+		background-image: url("background.jpg");
+	}
+
+	.navbar a{
+		text-decoration: none;
+		padding: 27px 3vw;
+		color: white;
+
+	}
+
+	.nav-wrapper li a:hover{
+		background: orange;
+	}
+
+	.nav-wrapper ul li{
+		list-style: none;
+		display: inline;
+		font-weight: bold;
+	}
+
+	.nav-wrapper ul{
+		padding: 100px 20px;
+		margin-top: 36px;
+	}
+
+
+	.nav-wrapper{
+		width: 50%;
+		text-align: center;
+		margin-left: 2vw;
+	}
+
+}
+
+@media screen and (min-width:1000px){
+	.Prescribe{
+		margin-top:50px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+
+.nav-title{
+		position: absolute;
+		color: black;
+		margin-top: -8px;
+		margin-left: 38vw;
+		font-weight: bold;
+		font-size: 20px;
+	}
+
+	.search{
+		position: absolute;
+		padding: 20px 40px;
+		top: 45px;
+		margin-left: -5vw;
+		width: 50%;
+	}
+
+	.search input{
+		width: 60%;
+		height: 3vh;
+		font-size: 20px;
+	}
+
+	.search button{
+		padding: 10px 20px;
+		height: 39px;
+		width: 120px;
+		margin-left: 20px;
+	}
+
+	.navbar{
+		position: absolute;
+		top: 0;
+		width: 200%;
+		left: -10px;
+		right: -10px;
+		height: 180px;
+		background-image: url("background.jpg");
+	}
+
+	.navbar a{
+		text-decoration: none;
+		padding: 27px 3vw;
+		color: white;
+
+	}
+
+	.nav-wrapper li a:hover{
+		background: orange;
+	}
+
+	.nav-wrapper ul li{
+		list-style: none;
+		display: inline;
+		font-weight: bold;
+	}
+
+	.nav-wrapper ul{
+		padding: 100px 20px;
+		margin-top: 36px;
+	}
+
+
+	.nav-wrapper{
+		width: 50%;
+		text-align: center;
+		margin-left: 2vw;
+	}
+
+}
+
+
+
+.Prescribe {
+    background-color: #FF6600;
+    border: none;
+    color: white;
+    padding: 35px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+}
+
+body{
+	background-color: #2c3840;
+}
+
+.Follow{
+	background-color: #2c3840;
+	color: white;
+	border-style: solid;
+	border-width: 3px;
+	border-color: black;
+}
+
+.Image{
+	float: left;
+}
+
+.FollowName{
+	font-size: 40px;
+	float: left;
+	padding: 5px;
+}
+
+.Songs{
+	display: inline-block;
+}

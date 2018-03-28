@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>User's Profile</title>
+		<!--The viewport meta tag controls page's dimensions and scaling http://www.w3schools.com/css/css_rwd_viewport.asp-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles/Dashboard.css"> 
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+        <script src="scripts/dashboard.js"></script>
+	</head>
+	<body onload="fillDashboard()">
+		<input type="hidden" name="username" value="">
+		<nav class="navbar">
+			<a class="nav-title" href="#">Song Prescriber</a>
+			<div class="search">
+					<input type="text" id="searchText" placeholder="Title - Artist">
+				<button value="submitsearch" class="searchButton">Search</button>
+				</div>
+			<div class="nav-wrapper">
+				<ul>
+					<li> <a onclick="goDashboard()">Home</a></li>
+					<li> <a onclick="goProfile()">Profile</a></li>
+					<li> <a onclick="goLogin()">Sign Out</a></li>
+				</ul>			
+			</div>
+		</nav>
+
+
+	<a onclick="checkUserSelectedSong()" class="Prescribe">Get a Song!</a>
+
+
+	<div class="Follow">
+		<div class="Image">
+			<img id="ImageOne" height = 100px width = 100px src="assets\images\profile-photo-placeholder.jpg">
+		</div>
+		<p class="FollowName" id="TrackOne">Track Name</p>
+		<ul class="Songs">
+			<li id="AlbumOne">Album Name</li>
+			<li><a href="#" id="LinkOne">Spotify Link</a></li>
+			<li id="SongDurationOne"> Song Duration</li>
+			
+		</ul>
+		<p class="Bio">Recommended Track #1</p>
+	</div>
+
+<div class="Follow">
+		<div class="Image">
+			<img id="ImageTwo" height = 100px width = 100px src="assets\images\profile-photo-placeholder.jpg">
+		</div>
+		<p class="FollowName" id="TrackTwo">Track Name</p>
+		<ul class="Songs">
+			<li id="AlbumTwo">Album Name</li>
+			<li><a href="#" id="LinkTwo">Spotify Link</a></li>
+			<li id="SongDurationTwo">Song Duration</li>
+			
+			
+		</ul>
+		<p class="Bio">Recommended Track #2</p>
+	</div>
+
+<div class="Follow">
+		<div class="Image">
+			<img id="ImageThree" height = 100px width = 100px src="assets\images\profile-photo-placeholder.jpg">
+		</div>
+		<p class="FollowName" id="TrackThree">Track Name</p>
+		<ul class="Songs">
+			<li id="AlbumThree">Album Name</li>
+			<li ><a href="#" id="LinkThree">Spotify Link</a></li>
+			<li id="SongDurationThree">Song Duration</li>
+			
+		</ul>
+		<p class="Bio">Recommended Track #3</p>
+	</div>
+
+
+	</body>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+
+</html>
+

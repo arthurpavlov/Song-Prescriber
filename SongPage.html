@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Songpage</title>
+        <link rel="stylesheet" href="assets/styles/SongPage.css">
+		<link rel="stylesheet" href="assets/styles/navbar.css"> 
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+		<script src="assets/scripts/songpage.js"></script>
+    </head>
+    <body>
+	    <nav class="navbar">
+			<a class="nav-title" href="#">Song Prescriber</a>
+			<div class="search">
+				<input type="text" id="searchText" placeholder="Title - Artist">
+				<button class="searchButton" value="submitsearch">Search</button>
+				</div>
+			<div class="nav-wrapper">
+				<ul>
+					<li> <a onclick="goDashboard()">Home</a></li>
+					<li> <a onclick="goProfile()">Profile</a></li>
+					<li> <a onclick="goLogin()">Sign Out</a></li>
+				</ul>			
+			</div>
+		</nav>
+	    <section id="sectionPlaySong">
+	        <section id="songImg">
+		        <img class ="songImg" id="cover-art" src="https://cdn.shutterstock.com/shutterstock/videos/13743122/thumb/12.jpg" alt="http://images.clipartpanda.com/song-clipart-958d9c2b5ed8dbbeaaaca28b451361fb.jpg" height=200 width=200>
+		    </section>
+		    <audio id="player" controls>
+                <source src="http://www.stephaniequinn.com/Music/Commercial%20DEMO%20-%2011.mp3" type="audio/mp3">
+            </audio>
+		</section>
+		<section id="sectionInfo">
+		    <header>
+                <h1 id="song-info-name"><strong>Song Name</strong></h1>
+                <p id="artist-info"><strong>Artist:</strong> Artist Name</p>
+		        <p id="album-info"><strong>Album:</strong> Album Name</p>
+            </header>
+		</section>
+		<section id="sectionSearch">
+		    <header>
+			    <h1 id="headerSearch">Similar Songs: </h1>
+				<ul class="ulSearch">
+		            <li><a class=searchAlbum href="search.html">Search for songs in this album</a></li>
+			        <li><a class=searchArtist href="search.html">Search for songs by this artist</a></li>
+			        <li><a class=searchGenre href="search.html">Search for songs with this genre</a></li>
+				</ul>
+			</header>
+		</section>
+		<section id="sectionLike">
+		    <p>Likes: 0 </p>
+			<button type="submit" class="buttonLike">Like</button>
+		</section>
+		<section id="sectionReport">
+		    <p>Submit A Report:</p>
+		    <button type="submit" class="buttonReport">Report</button>
+		</section>
+		<section id="sectionComments">
+		    <p>Comments: </p>
+		    <table class="comments">
+		    	<tr>
+		    		<td>username</td>
+		    		<td>comment</td>
+		    	</tr>
+		    </table>
+			<textarea class="commentBox" rows="4" cols="50"></textarea>
+			<button type="submit" class="buttonPost">Post comment</button>
+		</section>
+    </body>
+</html>
+
